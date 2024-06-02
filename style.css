@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*
+https://blog.hatena.ne.jp/-/blog_style/6801883189110859606/a4168f248b4f2b1f5e92612aff08f6e984dff7e1
+
+https://cdn.blog.st-hatena.com/css/blog.css?version=71cf6b6c2e5523547d8f382fc76c52
+
+1番上のはてなブログ共通メニュー
+	div id="globalheader-container" data-brand="hatenablog"
+上から2番目の固定ナビ
+	nav class=" blog-controlls is-responsive-and-browsing-with-smartphone "
+コンテナ
+	div id="container"
+	ヘッダー画像
+		header id="blog-title" data-brand="hatenablog"
+	パンくずリスト
+		div id="top-box"
+	記事ラッパー
+		div id="wrapper"
+		記事マージン
+			div id="main"
+			アーティクル
+				div id="content" class="hfeed"
+				記事ヘッダー
+					header class="entry-header"
+					記事日付
+					div class="date entry-date first"
+*/
+
+/* カラー設定 */
+#globalheader-container
+, .blog-controlls
+, .entry-header
+, body {
+	color: #9a9a9a;
+	background-color: #010022;
+}
+
+/* トップバー タイトル文字
+ヘッダー タイトル文字 */
+title a
+, .blog-controlls-blog-icon a
+, .entry-title a {
+	color: #8873E8;
+}
+
+/** リンク
+---------------------------------------- */
+/* 未訪問リンク */
+.entry a:link
+, a:link {
+	color: #8873E8;
+	text-decoration-line: none;
+	text-underline-offset: 0.3em;
+	transition: all 0.3s;
+}
+
+/* マウスオーバー */
+.entry a:hover
+, a:hover {
+	transform: translate(3px,3px);
+	text-decoration-line: underline;
+}
+
+/* 訪問済みリンク */
+.entry a:visited
+, a:visited {
+	color: #CB5682;
+}
